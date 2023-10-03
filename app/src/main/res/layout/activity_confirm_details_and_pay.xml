@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="Activity.ConfirmDetailsAndPayActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/icon_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Confirm Details"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:scrollbars="vertical"
+       android:layout_marginTop="55dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="15dp"
+               android:layout_marginTop="10dp"
+               android:text="Journey Details"
+               android:textColor="@color/blue"
+               android:textSize="20dp"
+               android:textStyle="bold" />
+
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="15dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="15dp"
+               android:elevation="20dp"
+               app:cardMaxElevation="2dp"
+               app:strokeColor="@color/white">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_margin="15dp"
+                   android:orientation="vertical">
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:weightSum="3">
+
+                       <TextView
+                           android:id="@+id/text_from"
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:text="Aalo"
+                           android:textColor="@color/blue"
+                           android:textSize="18dp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:layout_width="250dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:gravity="center"
+                           android:text="TO"
+                           android:textColor="@color/blue"
+                           android:textSize="18dp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:id="@+id/text_to"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity=""
+                           android:layout_weight="1"
+                           android:text="Basar"
+                           android:textColor="@color/blue"
+                           android:textSize="18dp"
+                           android:textStyle="bold" />
+
+
+                   </LinearLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginEnd="10dp">
+
+                       <TextView
+                           android:id="@+id/text_date"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/poppins"
+                           android:text="22-22-22"
+                           android:textColor="@color/black"
+                           android:textSize="12dp"
+                           android:textStyle="normal" />
+
+                       <TextView
+                           android:id="@+id/route_distance"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentEnd="true"
+                           android:fontFamily="@font/poppins"
+                           android:text="300 Km"
+                           android:textColor="@color/black"
+                           android:textSize="12dp"
+                           android:textStyle="normal" />
+
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="0dp"
+                       android:layout_marginEnd="10dp">
+
+                       <TextView
+                           android:id="@+id/start_time"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/poppins"
+                           android:text="06:03am"
+                           android:textSize="12dp"
+                           android:textStyle="normal" />
+                       <TextView
+                           android:id="@+id/end_time"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/poppins"
+                           android:text="07:50 pm"
+                           android:layout_marginLeft="5dp"
+                           android:layout_toEndOf="@+id/start_time"
+                           android:textSize="12dp"
+                           android:textStyle="normal" />
+
+                       <TextView
+                           android:id="@+id/duration"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentEnd="true"
+                           android:fontFamily="@font/poppins"
+                           android:text="3.5 hr"
+                           android:textSize="12dp"
+                           android:textStyle="normal" />
+
+
+                   </RelativeLayout>
+
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginEnd="10dp">
+
+                       <TextView
+                           android:id="@+id/vehicle"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Tata Sumo"
+                           android:textColor="@color/black"
+                           android:textSize="15dp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:id="@+id/ticket_prize"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentEnd="true"
+                           android:text="$ 5000.00"
+                           android:textColor="@color/black"
+                           android:textSize="15dp"
+                           android:textStyle="bold" />
+
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:id="@+id/seat"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Seat :-"
+                           android:textSize="15dp"
+                           android:textStyle="bold" />
+                       <TextView
+
+                           android:id="@+id/seat_no"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="15dp"
+                           android:text="A1,A2"
+                           android:layout_toEndOf="@+id/seat"
+                           android:textStyle="bold" />
+
+                   </RelativeLayout>
+
+               </LinearLayout>
+
+
+           </com.google.android.material.card.MaterialCardView>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="15dp"
+               android:layout_marginTop="10dp"
+               android:text="Passenger List "
+               android:textColor="@color/blue"
+               android:textSize="20dp"
+               android:textStyle="bold" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rv_passanger_list"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_margin="15dp"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="15dp"
+               android:text="Add Meal"
+               android:textColor="@color/blue"
+               android:textSize="20dp"
+               android:textStyle="bold" />
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/white"
+               android:layout_marginStart="15dp"
+               app:strokeColor="@color/white"
+               android:layout_marginEnd="15dp"
+               android:layout_marginTop="10dp">
+
+               <RadioGroup
+                   android:id="@+id/radio_gp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   android:layout_marginStart="15dp">
+
+
+                       <com.google.android.material.radiobutton.MaterialRadioButton
+                           android:id="@+id/option1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="15dp"
+                           android:text="Veg"
+                           android:textStyle="bold"
+                           android:textColor="@color/blue"
+                           app:buttonTint="@color/blue"
+                           android:layout_weight="1"
+                           android:checked="false"
+                           />
+                       <com.google.android.material.radiobutton.MaterialRadioButton
+                           android:id="@+id/option2"
+
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="15dp"
+                           android:text="Non-Veg"
+                           android:textStyle="bold"
+                           android:textColor="@color/blue"
+                           app:buttonTint="@color/blue"
+                           android:layout_weight="1"
+                           android:checked="false"
+                           />
+                       <com.google.android.material.radiobutton.MaterialRadioButton
+                           android:id="@+id/option3"
+
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="15dp"
+                           android:text="No"
+                           android:textStyle="bold"
+                           android:textColor="@color/blue"
+                           app:buttonTint="@color/blue"
+                           android:layout_weight="1"
+                           android:checked="false"
+                           ></com.google.android.material.radiobutton.MaterialRadioButton>
+
+               </RadioGroup>
+
+
+           </com.google.android.material.card.MaterialCardView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="15dp"
+               android:layout_marginTop="10dp"
+               android:text="Home Drop"
+               android:textColor="@color/blue"
+               android:textSize="20dp"
+               android:textStyle="bold" />
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/white"
+               android:layout_marginStart="15dp"
+               app:strokeColor="@color/white"
+               android:layout_marginEnd="15dp"
+               android:layout_marginTop="10dp">
+
+               <RadioGroup
+                   android:id="@+id/radioGP"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginStart="15dp">
+
+
+                   <com.google.android.material.radiobutton.MaterialRadioButton
+                       android:id="@+id/rg_bike"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="15dp"
+                       android:text="Bike"
+                       android:textStyle="bold"
+                       android:textColor="@color/blue"
+                       app:buttonTint="@color/blue"
+                       android:layout_weight="1"
+                       android:checked="false"
+                       />
+                   <com.google.android.material.radiobutton.MaterialRadioButton
+                       android:id="@+id/rg_texi"
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="15dp"
+                       android:text="Texi"
+                       android:textStyle="bold"
+                       android:textColor="@color/blue"
+                       app:buttonTint="@color/blue"
+                       android:layout_weight="1"
+                       android:checked="false"
+                       />
+                   <com.google.android.material.radiobutton.MaterialRadioButton
+                       android:id="@+id/rg_not"
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="15dp"
+                       android:text="No"
+                       android:textStyle="bold"
+                       android:textColor="@color/blue"
+                       app:buttonTint="@color/blue"
+                       android:layout_weight="1"
+                       android:checked="false"
+                       ></com.google.android.material.radiobutton.MaterialRadioButton>
+
+               </RadioGroup>
+
+
+           </com.google.android.material.card.MaterialCardView>
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/confirm_btn"
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:layout_alignParentBottom="true"
+               android:layout_centerInParent="true"
+               android:layout_marginBottom="10dp"
+               android:backgroundTint="@color/blue"
+               android:layout_gravity="center"
+               android:text="Confirm Details And Pay"
+               android:textSize="15dp"
+               app:cornerRadius="25dp"
+               android:layout_marginTop="10dp"/>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

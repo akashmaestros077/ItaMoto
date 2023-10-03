@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="Activity.BookingDoneActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Payment "
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:elevation="5dp"
+            app:strokeColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/success"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Congratulations"
+                    android:textColor="@color/blue"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/e3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textStyle="normal"/>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:id="@+id/matcart"
+                        android:layout_below="@+id/e3"
+                        android:layout_height="wrap_content"
+                        app:strokeColor="@color/black"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="From"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="To"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:layout_weight="1"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Seat Number"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Aalo"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:gravity="center"
+                                    android:textStyle="normal"
+                                    android:layout_weight="1"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Basar"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:textStyle="normal"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/poppins"
+                                    android:layout_weight="1"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="A1, A2"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:gravity="center"
+                                    android:textStyle="normal"
+                                    android:layout_weight="1"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_weight="1"
+                                    android:text="Date &amp; Time  "
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:gravity="center"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Passenger Deatils "
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Amount"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="10dp"
+                                    android:text="27 jun 2022 \n10:23 am"
+                                    android:textSize="15dp"
+
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Rahul M 26 \nShikha F 26"
+                                    android:textSize="15dp"
+                                    android:textStyle="normal" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$5000.00"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Journey Details"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/white"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/print_btn"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/blue"
+            android:text="Print Ticket"
+            android:drawableEnd="@drawable/print"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:layout_marginTop="50dp"
+            app:cornerRadius="25dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back_to_home_btn"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Back To Home"
+            android:textColor="@color/blue"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            app:cornerRadius="25dp" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

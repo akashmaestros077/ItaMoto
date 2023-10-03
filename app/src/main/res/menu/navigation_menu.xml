@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_wallet"
+        android:title="Wallet"
+        android:icon="@drawable/wallet" />
+
+    <item
+        android:id="@+id/na_ticket"
+        android:title="Cancel Ticket / History"
+        android:icon="@drawable/history"/>
+
+    <item
+        android:id="@+id/nav_refer"
+        android:title="Refer And Earn"
+        android:icon="@drawable/refer"/>
+    <item
+        android:id="@+id/nav_rate"
+        android:title="Rate Us On Playstore"
+        android:icon="@drawable/rate"/>
+    <item
+        android:id="@+id/nav_term"
+        android:title="Terms And Conditions"
+        android:icon="@drawable/term"/>
+    <item
+        android:id="@+id/nav_contect"
+        android:title="Contact Us "
+        android:icon="@drawable/hadset"/>
+    <item
+        android:id="@+id/nav_about"
+        android:title="About Us "
+        android:icon="@drawable/about"/>
+
+    <group>
+        <item android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/logout"/>
+    </group>
+</menu>
